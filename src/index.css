@@ -7,7 +7,7 @@
     --color-primary: 142 98% 51%;
     --color-secondary: 98, 78%, 34%;
     --color-text: 0 0% 93%;
-    --color-background: 240 20% 2%;
+    --color-background: rgb(0,1,10);
     --color-skeleton: 0 0% 13%;
   }
 
@@ -93,4 +93,8 @@
   color: rgba(147, 239, 9 , 1.0);
   font-weight: bold;
   font-size: x-large;
+}
+
+.rounded {
+	border-radius: 5vh !important;
 }
