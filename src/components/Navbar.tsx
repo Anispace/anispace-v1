@@ -1,4 +1,3 @@
-import logo from "../assets/logo.svg";
 import { RiSearchLine } from "react-icons/ri";
 import { PiTagChevronFill } from "react-icons/pi";
 import { useState, useEffect, useRef, forwardRef, useCallback, FormEvent } from "react";
