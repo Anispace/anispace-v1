@@ -88,7 +88,7 @@ export default function Home() {
     <>
       <Slider />
       <div className="py-6" ref={gridRef}>
-        <div className=" px-14 flex items-center justify-center text-sm gap-4 font-semibold">
+        <div className=" rounded px-14 flex items-center justify-center text-sm gap-4 font-semibold">
           <h3
             className={`cursor-pointer px-2 py-1 ${
               currentType === "recent" && "border-b-2  border-b-primary"
@@ -172,6 +172,7 @@ function Slider() {
           key={anime.id}
           className="bg-cover bg-center w-full h-full"
           style={{
+            borderRadius: `5vh`,
             backgroundImage: `linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("${
               anime.bannerImage || anime.coverImage.extraLarge
             }")`,
