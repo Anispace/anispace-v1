@@ -172,7 +172,7 @@ function Slider() {
           key={anime.id}
           className="bg-cover bg-center w-full h-full"
           style={{
-            borderRadius: `5vh`,
+            borderRadius: `.5vh`,
             backgroundImage: `linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("${
               anime.bannerImage || anime.coverImage.extraLarge
             }")`,
