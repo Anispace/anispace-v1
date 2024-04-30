@@ -8,7 +8,7 @@ import { MdLightMode, MdOutlineMenuOpen, MdDarkMode } from "react-icons/md";
 export default function Navbar() {
   const navigate = useNavigate();
   const inputRef = useRef<HTMLInputElement>(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useState("dark");
 
