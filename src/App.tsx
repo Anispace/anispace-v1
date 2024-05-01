@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
-
+import { Analytics } from "@vercel/analytics/react"
 export default function App() {
   const currentTitle = useRef(document.title);
   const {pathname } = useLocation(); 
@@ -11,7 +11,7 @@ export default function App() {
   useEffect(() => {
    
     const blurFunc = () => {
-      document.title = "🥺 Why'd yuh stopped looking at me!";
+      document.title = "Anispace - Watch Anime Without any Ads";
     };
     const focusFunc = () => {
       document.title = currentTitle.current;
@@ -32,6 +32,7 @@ export default function App() {
   
 
   return (
+    <Analytics/>
     <div className="max-w-[1600px] mx-auto">
       <Navbar />
       <div className="mt-16 sm:mt-20 md:mt-24">
